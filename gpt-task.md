@@ -1,90 +1,84 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
+# Doggo Quest
 
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+For this programming task, you will be simulating a dog park using Java. Your goal is to model dog behaviors and interactions using Object-Oriented Programming concepts. By the end of this exercise, you'll have a deeper understanding of Java classes, constructors, instance fields, methods, and encapsulation.
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This assignment should be completed and submitted before the next lab session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For detailed instructions on how to do and submit the assignment, please refer to the assignments section of the course materials.
 
 ## Preparation
-
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Complete the reading and exercises for Module 2: Looking Inside Classes.
+- Ensure you have access to the OLI material either via the direct link provided in the course or via the educational platform used for this course.
 
 ## Learning Goals
+This week's learning goals include:
+- Understanding Java classes and objects
+- Using constructors to create objects
+- Implementing instance fields for object attributes
+- Creating and using getters and setters
+- Applying encapsulation in Java
+- Managing object interactions with methods
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+## Getting Started
+Create a new Java file named `Doggo.java` in the `src` folder. This file will contain the `Doggo` class.
 
-## Troubleshooting Guide
+## Assignment Description
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+### Exercise 1: Your First Dog
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+In the `Doggo` class, start by coding a main method. Within this main method, initialize variables representing a dog's characteristics:
 
-## Assignment Details
+- Name (`String`)
+- Age (`int`)
+- Breed (`String`)
+- Energy level (`int`, from 0 to 10)
+- Is asleep? (`boolean`)
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+Instantiate these variables with example values.
 
-### Task 1: Class Creation
+### Exercise 2: A Pack of Doggos
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+After creating a single dog, it's time to expand our dog park! Let's add two more dogs, each with their unique attributes. Print the details of all three dogs to the console.
 
-### Task 2: Defining Properties
+Instead of manually managing each dog, we'll introduce a better solution: using objects.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+### Exercise 3: Fields
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+Transition from using local variables in the main method to using instance fields in the Doggo class. Define the same fields (name, age, breed, energy level, asleep status) within your class, but do not assign any values yet.
 
-### Task 3: Spawning Galaxy Pets
+### Exercise 4: Constructors
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+Implement a constructor for the `Doggo` class that allows you to set all the attributes at once upon instantiation.
 
-### Task 4: Encapsulation with Getters and Setters
+### Exercise 5: Getters and Setters
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+For encapsulation, change your fields to private and create getter and setter methods for each field. Remember the naming conventions for boolean fields and methods.
 
-### Task 5: Constructing with Constructors
+### Exercise 6: A Dynamic Dog Park
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+Using the constructor and getter/setter methods you've implemented, create a few dog objects and print their details using the `printInfo` method that you'll create next.
 
-### Task 6: Display Information
+### Exercise 7: printInfo Method
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+Implement a `printInfo()` method within the Doggo class. This method should print all relevant information about the dog, such as its name, age, breed, energy level, and sleeping status.
 
-### Task 7: The Cosmic Challenge
+### Exercise 8: Play Time
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+Implement an `interact` method where one Doggo object can interact with another Doggo object. For example, you can simulate playing or barking interactions between two dogs.
 
-### Task 8: Understanding Scope and Shadowing
+### Exercise 9: The Shadowing Problem
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+Discuss and illustrate the concept of variable shadowing within a class and how the `this` keyword is used to prevent it.
 
-## Final Checklist
+## Submission Checklist
 
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
+- Created a Doggo class with fields representing a dog's characteristics.
+- Used a constructor to instantiate dog objects.
+- Implemented getter and setter methods for class fields.
+- Added a `printInfo` method to display dog information.
+- Created an `interact` method to simulate interactions between two Doggo objects.
+- Explored the concept of variable shadowing.
 
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+Please, ensure your code is well-commented and follows good coding practices. Submit your `Doggo.java` file before the deadline.
